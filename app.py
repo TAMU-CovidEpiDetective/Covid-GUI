@@ -7,7 +7,7 @@ import plotly.express as px
 from dash.dependencies import Input, Output
 
 # Load data
-df = pd.read_csv('data/stockdata2.csv', index_col=0, parse_dates=True)
+df = pd.read_csv('data/stockdata2.csv', index_col=0, parse_dates=True) 
 df.index = pd.to_datetime(df['Date'])
 
 # Creates a list of dictionaries, which have the keys 'label' and 'value'.
